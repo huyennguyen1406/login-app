@@ -21,8 +21,7 @@ const Login = props => {
             setLoading(false);
             if (error.response.status === 401) setError(error.response.data.user);
             else setError("Something went wrong. Please try again later.");
-        }
-            );
+        });
     }
 
     return (
